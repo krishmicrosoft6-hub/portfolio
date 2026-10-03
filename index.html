@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio</title>
+  <title>This is my portfolio website</title>
   <style>
     :root {
       --bg-1: #160b2f;
@@ -136,6 +136,44 @@
       border-color: rgba(190, 168, 255, 0.6);
       box-shadow: 0 10px 24px rgba(124, 92, 255, 0.18), inset 0 0 18px rgba(168, 138, 255, 0.08);
       transform: translateX(4px);
+    }
+
+    .nav-socials {
+      margin-top: auto;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 10px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .nav-social-link {
+      width: 38px;
+      height: 38px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      color: rgba(245, 239, 255, 0.9);
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(192, 171, 255, 0.18);
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,0.02);
+      transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease, color 0.25s ease;
+    }
+
+    .nav-social-link:hover {
+      transform: translateY(-2px);
+      color: #fff;
+      border-color: rgba(201, 178, 255, 0.6);
+      box-shadow: 0 10px 20px rgba(124, 92, 255, 0.22);
+    }
+
+    .nav-social-link svg {
+      width: 18px;
+      height: 18px;
+      fill: currentColor;
+      display: block;
     }
 
     .menu-btn {
@@ -1169,6 +1207,31 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
 
+    <div class="nav-socials" aria-label="Social media links">
+      <a class="nav-social-link" href="https://www.instagram.com/kri_sh.25_/?utm_source=ig_web_button_share_sheet" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/>
+          <circle cx="12" cy="12" r="4.1" fill="none" stroke="currentColor" stroke-width="1.8"/>
+          <circle cx="17.2" cy="6.8" r="1.2" fill="currentColor"/>
+        </svg>
+      </a>
+      <a class="nav-social-link" href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 2.2a9.8 9.8 0 0 0-3.1 19.1c.5.1.7-.2.7-.5v-1.8c-2.8.6-3.4-1.2-3.4-1.2-.5-1.1-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.6 1 1.6 1 .9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.7-1.3-2.2-.3-4.6-1.2-4.6-5.3 0-1.2.4-2.2 1.1-2.9-.1-.3-.5-1.4.1-2.9 0 0 .9-.3 2.9 1.1a9.8 9.8 0 0 1 5.3 0c2-1.4 2.9-1.1 2.9-1.1.6 1.5.2 2.6.1 2.9.7.7 1.1 1.7 1.1 2.9 0 4.1-2.4 5-4.6 5.3.4.3.7 1 .7 2.1v3c0 .3.2.6.7.5A9.8 9.8 0 0 0 12 2.2Z"/>
+        </svg>
+      </a>
+      <a class="nav-social-link" href="https://www.linkedin.com/in/anuj-vishwakarma-42554037b" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M7.2 8.7A1.7 1.7 0 1 1 7.2 5.3a1.7 1.7 0 0 1 0 3.4ZM5.7 10.2h3v9h-3v-9Zm5.2 0h2.9v1.2h.1c.4-.8 1.4-1.7 2.9-1.7 3.1 0 3.7 2 3.7 4.7v5.8h-3v-5.4c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.5h-3v-9Z"/>
+        </svg>
+      </a>
+      <a class="nav-social-link" href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X" title="X">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M18.9 2.8h3.4l-7.4 8.4 8.7 10h-6.8l-5.3-7.2-6.1 7.2H1.1l7.9-9-8.3-9.4h6.9l4.8 6.8 5.5-6.8Zm-1.2 18.1h1.9L7.2 4.1H5.2l12.5 16.8Z"/>
+        </svg>
+      </a>
+    </div>
+
     <button class="menu-btn" type="button" aria-label="Open navigation menu" aria-controls="navLinks" aria-expanded="false" onclick="toggleMenu()">☰</button>
   </nav>
 
@@ -1196,7 +1259,7 @@
 
                 <div class="intro-block">
                   <p>I'm a Web Developer</p>
-                  <strong>Portfolio<br /><span class="accent">Design</span></strong>
+                  <strong>This is my<br /><span class="accent">portfolio website</span></strong>
                   <p>Currently I’m a web developer focused on product design and web experiences.</p>
                 </div>
 
@@ -1240,10 +1303,10 @@
               <div class="work-pill"><span>Design</span></div>
             </div>
 
-            <div class="hero-title" aria-label="Portfolio design">
-              <span class="word">Portfolio</span>
-              <span class="free-wrap"><span class="free-label">Free</span></span>
-              <span class="word accent">Design</span>
+            <div class="hero-title" aria-label="This is my portfolio website">
+              <span class="word">This is my</span>
+              <span class="free-wrap"><span class="free-label">portfolio</span></span>
+              <span class="word accent">website</span>
             </div>
 
             <div class="right-visual" aria-hidden="true">
@@ -1406,7 +1469,7 @@
         <div class="project">
           <div class="project-image">✨</div>
           <div class="project-content">
-            <h3>Portfolio Website</h3>
+            <h3>This is my portfolio website</h3>
             <p>A creative portfolio designed to showcase skills and work.</p>
             <a href="#" class="project-link">View Project →</a>
           </div>
